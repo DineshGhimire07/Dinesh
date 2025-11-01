@@ -36,7 +36,7 @@ const categories = [
   {
     title: 'Hobbies & Interests',
     icon: <FaLightbulb />,
-    skills: ['Chess', 'Solving Cubes', 'Photography', 'Traveling', 'Blogging'],
+    skills: ['Chess', 'Solving Rubik\'s Cubes', 'Photography', 'Traveling', 'Blogging'],
   },
 ]
 

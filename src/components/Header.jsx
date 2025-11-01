@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={styles.logo}>Dinesh</div>
+      <div className={styles.logo}>Dinesh Ghimire</div>
       <nav className={styles.nav}>
         {links.map(link => (
           <a key={link} href={`#${link.toLowerCase()}`} className={styles.link}>
