@@ -1,0 +1,128 @@
+.skillsSection {
+  padding: 80px 8%;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.magnetic {
+  cursor: pointer;
+}
+
+.glowText {
+  font-weight: 700;
+  background: linear-gradient(90deg, #6ee7ff, #a5f3fc);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+  text-shadow: 0 0 12px rgba(110, 231, 255, 0.4);
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 0 20px rgba(110, 231, 255, 0.05);
+  transform: translateY(60px) scale(0.95) rotate(-2deg);
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02) rotate(1deg);
+  box-shadow: 0 0 40px rgba(110, 231, 255, 0.3);
+  border: 1px solid var(--accent);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillItem {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: var(--text);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.skillItem:hover {
+  transform: translateX(6px) scale(1.05);
+  color: var(--accent);
+}
+
+.skillName {
+  font-weight: 600;
+  background: linear-gradient(90deg, #6ee7ff, #a5f3fc);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skillsSection {
+    padding: 60px 5%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

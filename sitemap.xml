@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://ghimire-dinesh.com.np/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://ghimire-dinesh.com.np/about</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Projects Page -->
+  <url>
+    <loc>https://ghimire-dinesh.com.np/projects</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://ghimire-dinesh.com.np/contact</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
