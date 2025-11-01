@@ -26,7 +26,7 @@ const categories = [
   {
     title: 'Business & Entrepreneurship',
     icon: <FaLightbulb />,
-    skills: ['Project Management', 'Lean Startup', 'Pitching Ideas', 'Market Research'],
+    skills: ['Project Management', 'Lean Startup', 'Pitching Ideas', 'Markets Research'],
   },
   {
     title: 'Soft Skills',
